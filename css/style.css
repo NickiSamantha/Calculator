@@ -1,7 +1,59 @@
-*,
-*::before,
-*::after{
-    margin: ;
-    padding: ;
-    box-sizing: border-box ;
+*::before
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+h1{
+    text-align: center;
+    color: aquamarine;
+}
+form input{
+    height: 50px;
+    width: 97%;
+}
+.Calculator{
+    border-radius: 10px;
+    box-shadow: aquamarine;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-block-start: 32px;
+    max-inline-size: 330px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: paleturquoise;
+}
+.output{
+    background: aquamarine;
+    color:aquamarine;
+    font-size: 32rem;
+    padding-block-start: 15rem;
+    padding-block-end: 15rem;
+    padding-inline-end: 15rem;
+    text-align:end;
+}
+.keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+    background: aquamarine;
+}
+.numbers{
+    background: aquamarine;
+    border: none;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    font-size: 17px;
+}
+.enterKey{
+    grid-column: 4 / 6;
+    grid-row: 1 / span 7;
+    background: palegoldenrod;
 }
