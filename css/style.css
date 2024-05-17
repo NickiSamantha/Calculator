@@ -1,23 +1,25 @@
-*::before
-*::after {
+*::before, *::after {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-align: center;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
-h1{
+
+h1 {
     text-align: center;
     color: aquamarine;
 }
-form input{
+
+form input {
     height: 50px;
-    width: 97%;
+    width: 100%;
 }
-.Calculator{
+
+.calculator {
     border-radius: 10px;
     box-shadow: aquamarine;
     margin-inline-start: auto;
@@ -28,32 +30,53 @@ form input{
     padding: 10px;
     background-color: paleturquoise;
 }
-.output{
-    background: aquamarine;
-    color:aquamarine;
-    font-size: 32rem;
-    padding-block-start: 15rem;
-    padding-block-end: 15rem;
-    padding-inline-end: 15rem;
-    text-align:end;
-}
-.keys{
+
+.calculator-screen {
+    font-size: 1rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1rem;
+    text-align: end;
+    width: 93.75%;
+} 
+
+.keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1px;
-    background: aquamarine;
+    
 }
-.numbers{
-    background: aquamarine;
-    border: none;
+
+.numbers {
+    background-color: aqua;
+    border: 1px solid black;
     padding-block-start: 16px;
     padding-block-end: 16px;
     padding-inline-start: 16px;
     padding-inline-end: 16px;
     font-size: 17px;
 }
-.enterKey{
+
+.equal-sign{
     grid-column: 4 / 6;
     grid-row: 1 / span 7;
-    background: palegoldenrod;
+    background: rgb(60, 182, 201);
+}
+.operator {
+    border: 1px solid black;
+    background-color: aquamarine;
+}
+.all-clear{
+    border: 1px solid black;
+    background-color: aquamarine;
+
+}
+.equal-sign operator{
+    border: 1px solid black;
+    background-color: aquamarine;
+
+}
+.period{
+    border: 1px solid black;
+    background-color: aquamarine;
 }
